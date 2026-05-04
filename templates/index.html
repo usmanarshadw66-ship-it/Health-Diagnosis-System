@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartHealth Pro AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="glass-card">
+        <h1>SmartHealth AI</h1>
+        <p style="text-align:center; opacity:0.7">آپ کی صحت، ہماری ترجیح</p>
+        
+        <form action="/predict" method="POST">
+            <div class="input-box">
+                <textarea name="symptoms" id="symp" placeholder="اپنی علامات بتائیں (مثلاً: مجھے بخار ہے)" required></textarea>
+                <span class="mic-icon">🎤</span>
+            </div>
 
+            <div class="input-box">
+                <input type="number" name="age" id="age" placeholder="اپنی عمر درج کریں" required>
+                <span class="mic-icon">🎤</span>
+            </div>
+
+            <button type="submit" class="btn">معائنہ کریں (Analyze)</button>
+        </form>
+        <p style="font-size: 12px; margin-top: 15px; opacity: 0.5;">Languages: Urdu, English, Punjabi, Sindhi, Pashto, Balochi, Saraiki, Hindi, etc.</p>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
