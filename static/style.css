@@ -1,48 +1,4 @@
-/* body {
-    font-family: Arial;
-    background: linear-gradient(135deg,#4facfe,#00f2fe);
-    text-align: center;
-}
 
-.card {
-    width: 90%;
-    max-width: 500px;
-    margin: 50px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-}
-
-input, select, button {
-    padding: 10px;
-    margin: 10px;
-    width: 90%;
-}
-
-button {
-    background: black;
-    color: white;
-    border-radius: 6px;
-}
-
-.box {
-    background: #f2f2f2;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 8px;
-}
-
-.danger {
-    color: red;
-    font-weight: bold;
-} */
-
-:root {
-    --primary: #00d2ff;
-    --secondary: #3a7bd5;
-    --bg: #0f172a;
-    --card: rgba(255, 255, 255, 0.05);
-}
 
 body {
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
